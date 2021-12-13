@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- lobster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/f30cc13ab0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Failed Signup</title>
+    <!-- <link rel="shortcut icon" type="image/png" href="/images/favicon.png" /> -->
+  </head>
+
+  <body>
+    <section id="header-section">
+      <div class="main-header">
+        <h1 class="header-text animate-top">
+          <span class="header-name cursive-font">Try Again</span>
+        </h1>
+      </div>
+    </section>
+    <!-- END HEADER -->
+    <!-- START ABOUT -->
+    <section id="about-section">
+      <div id="about" class="about-row">
+        <div class="about-column">
+          <!-- <img
+            class="about-img"
+            src="/images/fernandoMain.jpg"
+            alt="Fernando Gamino"
+          /> -->
+          <p class="contact-text">
+            Uh-oh something went wrong. Lets try again!
+          </p>
+          <div class="skill-logo-container">
+            <img
+              class="skill-logo"
+              src="/Images/puppyFace.png"
+              alt="Pug puppy face"
+            />
+            <img
+              class="skill-logo"
+              src="/Images/kittens.png"
+              alt="Two kittens"
+            />
+          </div>
+          <!-- <p class="contact-text">
+            Here for your bartending needs. Send me a message about your parties
+            or events, im ready to assit.
+          </p> -->
+        </div>
+
+        <div class="about-column-text">
+          <!-- Button for failure route -->
+          <form action="/failure" method="POST">
+            <button type="submit" name="button">Try Again</button>
+          </form>
+
+          <!-- contact for START -->
+          <!-- <div class="contact-form">
+            <form action="/" method="POST" id="contact-form">
+              <input
+                type="text"
+                name="fName"
+                placeholder="First Name"
+                class="form-control"
+                required
+                autofocus
+              />
+              <br />
+              <input
+                type="text"
+                name="lName"
+                placeholder="Last Name"
+                class="form-control"
+                required
+              />
+              <br />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="password form-control"
+                required
+              />
+              <br />
+              <div class="status"></div>
+              <button type="submit" class="submit form-control">Sign Up</button>
+            </form>
+          </div> -->
+          <!-- contact form END -->
+        </div>
+      </div>
+    </section>
+    <!--End About -->
+
+    <!-- INTEREST END -->
+    <footer>
+      &copy;Signup form 2021 made by
+      <a href="https://ricksoria.com" target="__blank">ricksoria</a>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script>
+      // START NAV
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      // END NAV
+    </script>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  background: rgb(1, 41, 41);
+}
+.cursive-font {
+  font-family: "Lobster", cursive;
+  color: rgb(244, 237, 51);
+}
+
+/* START HEADER  */
+#header-section {
+  padding: 1rem 0 10rem 0;
+  background-image: url(/Images/redPuppy.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-text {
+  font-size: 13rem;
+  margin-top: 4rem;
+  font-weight: 100;
+  font-family: "Lobster", cursive;
+  color: rgb(244, 237, 51);
+  text-align: center;
+}
+.animate-top {
+  position: relative;
+  animation: animatetop 2.4s;
+}
+
+@keyframes animatetop {
+  from {
+    /* top: -300px; */
+    top: 600px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .header-text {
+    font-size: 8rem;
+    margin-top: 10rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  #header-section {
+    padding: 1rem 0 10rem 0;
+  }
+  .header-text {
+    font-size: 5rem;
+    margin-top: 10rem;
+  }
+}
+/* END HEADER */
+/* About section START */
+#about-section {
+  /* padding: 11rem 0; */
+  background-color: rgba(6, 33, 82, 0.603);
+}
+
+.about-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.about-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 50%;
+}
+
+.about-column-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 50%;
+  padding: 10px 50px 0 0;
+}
+
+.contact-text {
+  color: #ddd;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+@media (max-width: 800px) {
+  #about-section {
+    padding: 3rem 0;
+  }
+  .about-column-text {
+    padding: 0;
+  }
+  .about-row {
+    flex-direction: column;
+    padding: 5rem 2.5rem;
+    justify-content: center;
+  }
+
+  .about-column {
+    margin: 0;
+    padding: 0;
+  }
+  .contact-text {
+    font-size: 2rem;
+    padding: 0 1.75rem;
+  }
+}
+
+/* end of about */
+/* STart LOGOS */
+.skill-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.skill-logo {
+  width: 35%;
+  margin: 20px 20px 50px;
+}
+/* END LOGoS */
+
+/* Form Start */
+.container {
+  padding: 1.75rem 0 25rem 0;
+}
+.contact-section {
+  background-color: rgba(206, 205, 199, 0.356);
+  border-radius: 2rem;
+  margin: 3rem 19rem 0 19rem;
+}
+
+.contact-title {
+  margin-top: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+
+.contact-title h1 {
+  font-size: 32px;
+  /* line-height: 10px; */
+}
+
+.contact-title h2 {
+  font-size: 16px;
+}
+
+form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-section {
+    margin: 3rem 11rem 0 11rem;
+  }
+  .form-control {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-section {
+    margin: 0;
+  }
+  .form-control {
+    width: 400px;
+  }
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background: #ff5722;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form .submit:hover {
+  background-color: #0225be79;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+/* FORM END */
+
+/* Footer Start */
+footer {
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.75rem;
+  background-color: rgba(13, 41, 92, 0.603);
+  color: #ddd;
+  padding: 2rem 0 0 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.footer-nav-section {
+  margin-bottom: 2rem;
+}
+.footer-nav-text {
+  cursor: pointer;
+  padding: 0 0.75rem;
+}
+.footer-nav-text:hover {
+  color: rgb(14, 14, 14);
+  background-color: rgb(244, 237, 51);
+  padding: 0.55rem;
+  border-radius: 2rem;
+}
+/* Footer End */
